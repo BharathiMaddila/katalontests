@@ -13,9 +13,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.acceptAlert()
+WebUI.openBrowser('')
 
-WebUI.acceptAlert()
+WebUI.navigateToUrl('https://admin.visitdays.com/login')
 
-WebUI.acceptAlert()
+WebUI.sendKeys(findTestObject('username'), 'test.user1@qualitlabs.com')
+
+WebUI.sendKeys(findTestObject('password'), 'Kishore1234')
+
+WebUI.click(findTestObject('signin'))
 
