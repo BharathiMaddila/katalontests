@@ -15,5 +15,3 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-bharathi
-bharathibharathi
